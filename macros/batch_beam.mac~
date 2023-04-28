@@ -1,0 +1,28 @@
+##################################################################
+# Set physics model options
+##################################################################
+
+/BBHodoG4MC/physics/addPhysics QGSP_BIC_EMY
+/run/initialize
+
+##################################################################
+# Set output options
+##################################################################
+
+/BBHodoG4MC/output/setOutputFile batch_beam.root
+
+##################################################################
+# Set generator options
+##################################################################
+
+/BBHodoG4MC/generator/Mode 0
+/BBHodoG4MC/generator/Nevents 10000
+
+/gps/particle e-
+/gps/pos/type Point
+/gps/pos/centre 0. 0. -2. m
+/gps/ang/type beam1d
+/gps/ang/rot1 -1 0 0
+/gps/ang/rot2 0 1 0
+/gps/ang/sigma_r 10. deg
+/gps/energy 1.0 GeV
