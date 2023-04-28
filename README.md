@@ -21,7 +21,6 @@
   	./BBHodoG4MC
   	then in the gui: 
 	/control/execute macros/vis_beam.mac 
-	or /control/execute macros/vis_root.mac 
 
 ------------------------------------------------------------------------
  Running the simulation in batch mode
@@ -75,17 +74,17 @@
 		Virtual_Nhits	-- number of virtual detector hits in this event
 		Virtual_*[]	-- arrays of virtual hit variables, including pdg, energy, position, direction,
 				   particle vertex, time, track id, mother track id and detector id variables:
-					Virtual_det[] -- which detector (0 for Earm, 1 for hodoscope, 2 for Harm)
-					Virtual_mod[] -- which sector (0 to 5)
-					Virtual_row[] -- which row (0-31 Earm, 0-79 hodoscope, 0-16 Harm)
-					Virtual_col[] -- which col (0-5 Earm, 0-15 hodoscope, 0-3 Harm)
+					Virtual_det[] -- which detector (0) 
+					Virtual_mod[] -- which sector (0)
+					Virtual_row[] -- which row (0-90)
+					Virtual_col[] -- which col (1)
 		Real_Nhits	-- number of real detector hits in this event
 		Real_*[]	-- arrays of real hit variables, including energy deposit, position, time,
 				   and detector id variables:
-					Real_det[] -- which detector (0 for Earm, 1 for hodoscope, 2 for Harm)
-					Real_mod[] -- which sector (0 to 5)
-					Real_row[] -- which row (0-31 Earm, 0-79 hodoscope, 0-16 Harm)
-					Real_col[] -- which col (0-5 Earm, 0-15 hodoscope, 0-3 Harm)
+					Real_det[] -- which detector (0) 
+					Real_mod[] -- which sector (0)
+					Real_row[] -- which row (0-90)
+					Real_col[] -- which col (1)
 
 
 
