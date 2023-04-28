@@ -126,7 +126,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 
   fRealDetectorSD = new RealDetectorSD("RealDetectorSD", fNSD );
   SDman->AddNewDetector( fRealDetectorSD );
-  hodo_log->SetSensitiveDetector( fVirtualDetectorSD );
+  hodo_log->SetSensitiveDetector( fRealDetectorSD );
 
   // Visualisation
   G4VisAttributes* blue    = new G4VisAttributes( G4Colour(0.0,0.0,1.0) );
