@@ -18,6 +18,8 @@ set(LIB_ROOT ${ROOT_LIBRARY_DIR})
 add_definitions(${Geant4_CXX_FLAGS})
 set(CMAKE_CXX_FLAGS ${Geant4_CXX_FLAGS})
 
+find_package(Qt5Core REQUIRED)
+
 #set(CMAKE_CXX_STANDARD 17)
 #set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
